@@ -20,10 +20,10 @@ function tryTypeof(val = []) {
 
 try  {
     let val = 'String';
-    const doble = tryTypeof(val);
-    console.log(val);
+    const val_2 = tryTypeof(val);
+    console.log(val_2);
 } catch (e) {
-    console.log("Error: ",e);
+    logger.log("Error: ",e);
 } 
 
 logger.log('Error!');
