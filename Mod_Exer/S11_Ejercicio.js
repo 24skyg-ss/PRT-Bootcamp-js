@@ -5,7 +5,10 @@ class Estudiante {
         this.nombre = nombre;
     };
     obtenDatos() {
-        return this.asignaturas.concat(this.nombre).reverse();
+        return {
+            nombre: this.nombre,
+            asignaturas: this.asignaturas
+        }
     }
 }
 
