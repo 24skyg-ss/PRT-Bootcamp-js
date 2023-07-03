@@ -16,3 +16,11 @@ function buscaPalabras(words, word) {
     let chars = words.filter(str => str.length > leng);
     return chars; 
 }
+
+function minAndMaxWord(words) {
+    let max = Math.max(...words);
+    let min = Math.min(...words);
+    let indexMax = words.indexOf(max);
+    let indexMin = words.indexOf(min);
+    return [indexMin,indexMax];
+}
