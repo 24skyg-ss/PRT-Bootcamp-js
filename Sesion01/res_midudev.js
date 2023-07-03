@@ -24,3 +24,26 @@ function minAndMaxWord(words) {
     let indexMin = words.indexOf(min);
     return [indexMin,indexMax];
 }
+
+function createObject(name, subs) {
+    let obj = {
+      name: name,
+      subscribers: subs,
+      hash: (name.length * subs),
+      getStatus: function() {
+        return `El canal de ${name} tiene ${subs} suscriptores`
+      }
+    }
+    return obj;
+  }
+
+  function getKeysOfBooleanValues(obj) {
+    let vals = Object.entries(obj);
+    let rest = [];
+    vals.forEach((entry) => {
+      const prop = entry[0];
+      const val = entry[1];
+      if (typeof val === 'boolean') rest.push(prop);
+    })
+    return rest;
+  }
