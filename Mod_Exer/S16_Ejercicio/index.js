@@ -1,8 +1,5 @@
 const parrafos = document.querySelectorAll(".parrafo");
 const secciones = document.querySelectorAll(".seccion");
-const papelera = document.querySelectorAll(".img-paperbin");
-console.log(parrafos);
-
 
 parrafos.forEach(parrafo => {
     parrafo.addEventListener("dragstart", event => {
@@ -34,10 +31,14 @@ secciones.forEach(seccion => {
     })
 })
 
-papelera.forEach(parrafo => {
-    parrafo.addEventListener("ondrop", event => {
-        const parr = document.getElementById(event.dataTransfer.getData("id"));
-        parr.parentNode.removeChild(parr);
-        console.log(`Párrafo ${parr} eliminado.`);
-    })
+const papelera = document.querySelector(".papelera");
+
+papelera.addEventListener("dragover", event => {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "copy";
+})
+
+papelera.addEventListener("drop", event => {
+    const parr = event.dataTransfer.getData("id");
+    document.getElementById(parr).remove();
 })
