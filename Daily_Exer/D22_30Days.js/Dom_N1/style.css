@@ -1,0 +1,29 @@
+.contenedor {
+    margin: 1rem;
+    position: relative;
+}
+
+h1, h4, h5 { 
+    text-align: center;
+    line-height: 0.4;
+}
+
+.lista {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+}
+
+.number {
+    padding: 2rem;
+    margin: 3px;
+    margin-inline: 3px;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
