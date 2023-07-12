@@ -28,7 +28,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), { zoom: 4, center: posicion });
 
     marker = new google.maps.Marker({
-        position: pos1,
+        position: pos,
         map: map,
         title: "Posición Inicial"
     })
@@ -51,32 +51,4 @@ function initMap() {
         title: "Cristo redentor"
     })
 
-    // geoPosition();
 }
-/*
-function geoPosition() {
-    if (navigator.geolocation) {
-        const geoLoc = navigator.geolocation;
-        const options = { timeout: 60000 };
-
-        const watchPos = geoLoc.watchPosition( centrarMapa, onError, options );
-    } else {
-        alert("Tu navegador no admite geolocalización.");
-    }
-}
-
-function centrarMapa(position) {
-    const newPos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-    }
-    console.log(newPos);
-    marker.setPosition(newPos);
-    map.setCenter(newPos);
-}
-
-function onError(error) {
-    console.log("Se ha producido un error.");
-    console.error(error);
-}
-*/

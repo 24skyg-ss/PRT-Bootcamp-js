@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+.title { 
+    text-align: center;
+}
+
+.lista {
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+    width: 60%;
+    left: 16%;
+}
+
+li {
+    padding: 1rem;
+    margin: 0.15%;
+}
