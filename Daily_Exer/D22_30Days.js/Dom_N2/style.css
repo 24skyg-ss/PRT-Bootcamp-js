@@ -1,0 +1,42 @@
+.contenedor {
+    margin: 1rem;
+    position: relative;
+}
+
+h1, h3, h6 { 
+    text-align: center;
+    line-height: 0.4;
+}
+
+.lista {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+}
+
+.countrie {
+    /* Separación */
+    margin: 3px;
+    margin-inline: 3px;
+
+    /* Estructura */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    /* Dimensiones */
+    height: 7rem;
+    width: 7rem;
+
+    /* Estilo */
+    border-radius: 10px;
+    background-color: goldenrod;
+    
+    /* Centrar texto ajustable al bloque */
+    word-break:break-all;               
+}
